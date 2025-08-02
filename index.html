@@ -3,58 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Desafio</title>
+    <title>Desafio - Adicionador</title>
     <link rel="stylesheet" href="style.css">
+   
 </head>
 <body>
-    <header>
-
-    </header>
     <section>
-        <div>
-            <p>Adicione um número <input type="number" name="fnum" id="fnum"> <input type="button" value="Adicionar" onclick="adicionar()"></p>
-            <br>
-            <p class="lista"><select name="flista" id="flista" size="6">
-
+        <h1>Adicione um Número</h1>
+        <div class="input-area">
+            <input type="number" name="fnum" id="fnum" placeholder="Digite aqui">
+            <input type="button" value="Adicionar" onclick="adicionar()">
+        </div>
+        <div class="lista">
+            <select name="flista" id="flista" size="6">
             </select>
-            </p>
-            <p><input type="button" value="Enter" id="botao"></p>
-
         </div>
-
-        <div id="res">
-
-        </div>
+        <input type="button" value="Enter" id="botao">
+        <div id="res"></div>
     </section>
-    <script>
-        let num = document.getElementById('fnum')  
-let lista = document.getElementById('flista')
-let res = document.getElementById('res')
-let valores = []
-
-function adicionar(){
-    if(isNumero(num.value) && !inLista(num.value, valores)){
-        window.alert('ok')
-    } else{
-        window.alert('ERRO')
-    }
-}
-
-function isNumero(n){
-    if(Number(n) >= 1 && Number(n) <= 100){
-        return true
-    } else{
-        return false
-    }
-}
-
-function inLista(n,l){
-    if(l.indexOf(Number(n)) != -1){
-        return true
-    } else{
-        return false
-    }
-}
-    </script>
+  <script src="script.js"></script>
 </body>
 </html>

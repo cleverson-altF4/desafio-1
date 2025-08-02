@@ -1,46 +1,93 @@
 @charset "UTF-8";
-*{
-    padding: 0px;
-    margin: 0;
-    box-sizing: border-box;
-}
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
 
-section{
-    background-color: rgba(0, 0, 0, 0.192);
-    width: 500px;
-    border-radius: 20px;
-    padding: 20px;
-    display: block;
-    margin: 0 auto;
-    margin-top: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+        body {
+            background: linear-gradient(to right, #4facfe, #00f2fe);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
 
-.lista{
-    display: flex;
-    justify-content:center;
-    align-items:center;
-    height: 150px;
-    margin: auto;
-  
-}
+        section {
+            background-color: white;
+            width: 90%;
+            max-width: 500px;
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
 
-#flista{
-    width: 150px;
-    height: 150px;
-}
-#botao{
-    display: flex;
-    align-items: center;
-    justify-content: end;
-    margin-top: 10px;
-    border: none;
-    margin: 0 auto;
-    width: 50px;
-    padding: 10px;
-    border-radius: 5px;
-    background-color: rgb(144, 218, 34);
-   
-}
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .input-area {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        input[type="number"] {
+            padding: 10px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            width: 120px;
+        }
+
+        input[type="button"] {
+            padding: 10px 15px;
+            border: none;
+            border-radius: 8px;
+            background-color: #00c853;
+            color: rgb(250, 248, 248);
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        input[type="button"]:hover {
+            background-color: #00b248;
+        }
+
+        .lista {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+
+        #flista {
+            width: 100%;
+            max-width: 300px;
+            height: 150px;
+            border-radius: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+
+        #botao {
+            background-color: #2962ff;
+            margin: 0 auto;
+            display: block;
+            width: 100px;
+            font-size: 14px;
+        }
+
+        #botao:hover {
+            background-color: #0039cb;
+        }
+
+        #res {
+            margin-top: 20px;
+            text-align: center;
+            color: #333;
+        }
