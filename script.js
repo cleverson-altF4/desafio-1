@@ -5,9 +5,9 @@ let valores = [] //array vazio para add um número
 
 function adicionar(){ //função clicar na caixa
    if(isNum(num.value) && !inLista(num.value, valores)){
-    window.alert('CERTO')
+   
    } else{
-    window.alert('ERRADO')
+    
    }
 }
 
